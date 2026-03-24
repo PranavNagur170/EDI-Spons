@@ -34,7 +34,7 @@ export function AppLayout({ children, title }: AppLayoutProps) {
                 JD
               </div>
               <div className="hidden sm:block">
-                <p className="text-sm font-medium text-foreground leading-none">John Doe</p>
+                <p className="text-sm font-medium text-foreground leading-none">PRANAV</p>
                 <p className="text-xs text-muted-foreground">Admin</p>
               </div>
               <ChevronDown className="w-4 h-4 text-muted-foreground" />

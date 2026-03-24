@@ -35,7 +35,7 @@ const navSections = [
     items: [
       { title: "Pre-Registration", path: "/pre-registration", icon: UserPlus },
       { title: "Check-In", path: "/check-in", icon: UserCheck },
-      { title: "Checkout", path: "/checkout", icon: LogOut },
+      // { title: "Checkout", path: "/checkout", icon: LogOut },
       { title: "Spot Request", path: "/spot-request", icon: Clock },
     ],
   },
@@ -93,7 +93,7 @@ export function AppSidebar() {
           </div>
           {!collapsed && (
             <span className="text-sidebar-accent-foreground font-semibold text-sm tracking-tight">
-              VisiGuard
+              Eagle Security
             </span>
           )}
           <button
