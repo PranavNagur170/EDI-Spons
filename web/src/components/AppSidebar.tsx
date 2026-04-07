@@ -92,7 +92,7 @@ export function AppSidebar() {
             <Shield className="w-4 h-4 text-sidebar-primary-foreground" />
           </div>
           {!collapsed && (
-            <span className="text-sidebar-accent-foreground font-semibold text-sm tracking-tight">
+            <span className="text-white font-semibold text-lg tracking-tight">
               Eagle Security
             </span>
           )}
@@ -105,7 +105,7 @@ export function AppSidebar() {
         </div>
 
         {/* Nav */}
-        <nav className="flex-1 overflow-y-auto py-4 px-3 space-y-6">
+        <nav className="flex-1 overflow-y-auto py-4 pl-3 pr-0 space-y-6">
           {navSections.map((section) => (
             <div key={section.label}>
               {!collapsed && (
@@ -120,10 +120,10 @@ export function AppSidebar() {
                     <li key={item.path}>
                       <NavLink
                         to={item.path}
-                        className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-all duration-150 ${
+                        className={`flex items-center gap-3 pl-4 pr-3 py-3 rounded-l-[1.5rem] text-sm transition-all duration-150 ${
                           active
-                            ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
-                            : "text-sidebar-foreground hover:bg-sidebar-accent/50 hover:text-sidebar-accent-foreground"
+                            ? "sidebar-active-tab"
+                            : "text-sidebar-foreground hover:bg-sidebar-accent/10 hover:text-white"
                         }`}
                       >
                         <item.icon className="w-[18px] h-[18px] shrink-0" />
